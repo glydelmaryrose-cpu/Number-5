@@ -7,15 +7,15 @@
  */
 public class Number5
 {
-    public static void main(String [] args){
-        int [] arr = {3, 5 ,4, 8, 2, 9};
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};  
+        int target = 3;  
         
-        for (int num : arr){
-            if (num == 8){
-                System.out.println("Found 8! Stopping.");
-                break;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) { 
+                System.out.println("Found " + target + " at index " + i);
+                break; 
             }
-            System.out.println("Checking: " + num);
         }
     }
 }
